@@ -17,7 +17,7 @@ Animal Pose Estimation
 ### Dianela
 https://github.com/DianelaOB/multirun_animal_pose_estimation_robustness
 
-### Minjung
+### Minjung Kim
 https://github.com/minjungkim85/neuromatch-academy
 
 ### Xin Lin
