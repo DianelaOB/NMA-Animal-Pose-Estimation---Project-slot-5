@@ -12,7 +12,7 @@
 
 ## Project
 
-Animal Pose Estimation 
+Animal Pose Estimation (Add final name)
 
 ## Repository structure
 
