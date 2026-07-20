@@ -1,5 +1,9 @@
 # NMA-Animal-Pose-Estimation---Project-slot-5
 
+# Neuromatch Academy - Deep Learning - July 2026  - Slot 5
+
+## Computational Neuroscience --- Project: Animal Pose Estimation
+
 ## Team
 
 - Dianela
@@ -22,9 +26,11 @@ https://github.com/minjungkim85/neuromatch-academy
 
 ### Xin Lin
 
-###
+(Add repositories here.)
 
-### 
+### Other members
+
+(Add repositories here.)
 
 ## Project description
 
