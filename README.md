@@ -1,5 +1,3 @@
-# NMA-Animal-Pose-Estimation---Project-slot-5
-
 # Neuromatch Academy - Deep Learning - July 2026  - Slot 5
 
 ## Computational Neuroscience --- Project: Animal Pose Estimation
