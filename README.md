@@ -7,12 +7,12 @@
 - Dianela
 - Minjung Kim
 - Xin Lin
--
--
+- Pedro Luis Artunduaga Ortiz
+- Richard Williamson
 
 ## Project
 
-Animal Pose Estimation (Add final name and description)
+Evaluating the Robustness of a U-Net-Based Animal Pose Estimator Using a Fruit Fly Dataset
 
 ## Repository structure
 
@@ -23,12 +23,14 @@ https://github.com/DianelaOB/multirun_animal_pose_estimation_robustness
 https://github.com/minjungkim85/neuromatch-academy
 
 ### Xin Lin
+https://drive.google.com/file/d/1dzZctZlUrhI1bjMsizNhyUQPLLWU-Wyt/view?usp=drive_link
 
-(Add repositories here.)
+### Pedro Luis Artunduaga Ortiz
+https://drive.google.com/drive/folders/1sNtI8lY4JeM2yKgf1VfffMonIJ5EhqAe?usp=drive_link
 
-### Other members
+### Richard Williamson
 
-(Add repositories here.)
+[to do]
 
 ## Repository description
 
