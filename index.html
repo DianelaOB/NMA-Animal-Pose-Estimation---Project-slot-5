@@ -22,7 +22,6 @@
       --navy: #142235;
       --navy-light: #1f3654;
       --blue: #2f6fce;
-      --blue-dark: #2457a3;
       --orange: #f28c45;
       --background: #f4f7fb;
       --card: #ffffff;
@@ -119,7 +118,7 @@
           transparent 28%
         ),
         linear-gradient(135deg, #101c2c, #1b304b);
-      padding: 110px 0 100px;
+      padding: 105px 0 95px;
     }
 
     .hero::after {
@@ -143,7 +142,7 @@
     .hero-content {
       position: relative;
       z-index: 1;
-      max-width: 980px;
+      max-width: 1000px;
       margin: 0 auto;
       text-align: center;
     }
@@ -163,9 +162,9 @@
     }
 
     .hero h1 {
-      max-width: 980px;
+      max-width: 1000px;
       margin: 0 auto 26px;
-      font-size: clamp(2.4rem, 5vw, 4.7rem);
+      font-size: clamp(2.4rem, 5vw, 4.5rem);
       line-height: 1.08;
       letter-spacing: -0.035em;
     }
@@ -174,7 +173,7 @@
       max-width: 800px;
       margin: 0 auto;
       color: #d9e4f1;
-      font-size: clamp(1.05rem, 2vw, 1.3rem);
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
     }
 
     .hero-buttons {
@@ -257,11 +256,6 @@
       line-height: 1.2;
     }
 
-    h3 {
-      margin-top: 0;
-      color: var(--navy-light);
-    }
-
     p {
       margin: 0 0 18px;
     }
@@ -270,126 +264,7 @@
       margin-bottom: 0;
     }
 
-    .lead {
-      color: #384658;
-      font-size: 1.12rem;
-    }
-
-    .highlight {
-      border-left: 5px solid var(--orange);
-      background: #fff7f0;
-    }
-
-    .objectives {
-      display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(230px, 1fr));
-      gap: 18px;
-      margin-top: 28px;
-    }
-
-    .objective {
-      padding: 24px;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      background: #f9fbfe;
-    }
-
-    .objective-number {
-      display: flex;
-      width: 40px;
-      height: 40px;
-      margin-bottom: 15px;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      background: var(--blue);
-      color: white;
-      font-weight: 800;
-    }
-
-    .objective p {
-      margin: 0;
-      color: #445165;
-    }
-
-    .pipeline {
-      display: grid;
-      grid-template-columns:
-        repeat(5, minmax(140px, 1fr));
-      align-items: stretch;
-      gap: 12px;
-      margin-top: 30px;
-    }
-
-    .pipeline-step {
-      position: relative;
-      display: flex;
-      min-height: 130px;
-      padding: 22px 16px;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid #ccdaea;
-      border-radius: 14px;
-      background: #f7faff;
-      color: var(--navy-light);
-      text-align: center;
-      font-weight: 700;
-    }
-
-    .pipeline-step:not(:last-child)::after {
-      content: "→";
-      position: absolute;
-      right: -19px;
-      top: 50%;
-      z-index: 2;
-      color: var(--blue);
-      font-size: 1.5rem;
-      transform: translateY(-50%);
-    }
-
-    .results-grid {
-      display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
-      margin-top: 30px;
-    }
-
-    .result-card {
-      padding: 24px;
-      border-top: 4px solid var(--blue);
-      border-radius: 12px;
-      background: #f7faff;
-    }
-
-    .result-card h3 {
-      margin-bottom: 10px;
-      font-size: 1.08rem;
-    }
-
-    .result-card p {
-      color: #4e5c6d;
-      font-size: 0.98rem;
-    }
-
-    .figure-placeholder {
-      margin-top: 30px;
-      padding: 44px 24px;
-      border: 2px dashed #bdcadd;
-      border-radius: 14px;
-      background: #f8fafc;
-      color: var(--muted);
-      text-align: center;
-    }
-
-    .figure-placeholder strong {
-      display: block;
-      margin-bottom: 6px;
-      color: var(--navy-light);
-    }
-
-    .team-grid {
+    .authors-grid {
       display: grid;
       grid-template-columns:
         repeat(auto-fit, minmax(210px, 1fr));
@@ -397,9 +272,9 @@
       margin-top: 26px;
     }
 
-    .team-member {
+    .author {
       display: flex;
-      min-height: 110px;
+      min-height: 105px;
       padding: 22px;
       align-items: center;
       justify-content: center;
@@ -409,7 +284,16 @@
       color: var(--navy-light);
       text-align: center;
       font-size: 1.05rem;
-      font-weight: 750;
+      font-weight: 700;
+    }
+
+    .abstract-text p {
+      text-align: justify;
+    }
+
+    .availability {
+      border-left: 5px solid var(--orange);
+      background: #fff7f0;
     }
 
     .links-grid {
@@ -478,23 +362,11 @@
       }
 
       .hero {
-        padding: 85px 0 75px;
+        padding: 80px 0 72px;
       }
 
       .section {
         padding: 34px 26px;
-      }
-
-      .pipeline {
-        grid-template-columns: 1fr;
-      }
-
-      .pipeline-step:not(:last-child)::after {
-        content: "↓";
-        top: auto;
-        right: 50%;
-        bottom: -25px;
-        transform: translateX(50%);
       }
     }
 
@@ -527,6 +399,10 @@
         margin-bottom: 22px;
         padding: 28px 20px;
       }
+
+      .abstract-text p {
+        text-align: left;
+      }
     }
   </style>
 </head>
@@ -541,12 +417,10 @@
       </a>
 
       <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#objectives">Objectives</a>
-        <a href="#methods">Methods</a>
-        <a href="#results">Results</a>
-        <a href="#conclusion">Conclusion</a>
-        <a href="#team">Team</a>
+        <a href="#authors">Authors</a>
+        <a href="#abstract">Abstract</a>
+        <a href="#availability">Data &amp; Code</a>
+        <a href="#links">Links</a>
       </div>
 
     </div>
@@ -560,15 +434,15 @@
       </div>
 
       <h1>
-        Evaluating the Robustness of a U-Net-Based Animal Pose
-        Estimator Using a Fruit Fly Dataset
+        Evaluating the Robustness of a U-Net-Based Animal Pose Estimator
+        Using a Fruit Fly Dataset
       </h1>
 
       <p class="hero-description">
-        A computational neuroscience project investigating how reliably
-        a U-Net-based pose estimation model localizes fruit fly anatomical
-        landmarks under appearance changes, geometric transformations,
-        and occlusion.
+        Computational Neuroscience project developed during the
+        Neuromatch Academy Deep Learning course in July 2026.
+        The project uses the official Neuromatch Academy Animal Pose
+        Estimator to evaluate the robustness of a U-Net-based model.
       </p>
 
       <div class="hero-buttons">
@@ -598,335 +472,171 @@
   <main>
     <div class="container">
 
-      <section class="section highlight" id="origin">
-        <div class="section-label">Project origin</div>
+      <section class="section" id="authors">
 
-        <h2>Neuromatch Academy Deep Learning Project</h2>
-
-        <p class="lead">
-          This project was developed during the Neuromatch Academy
-          Deep Learning course in July 2026, Slot 5, as part of the
-          Computational Neuroscience project track.
-        </p>
-
-        <p>
-          The work builds upon the official Neuromatch Academy
-          <strong>Animal Pose Estimation</strong> project, which uses
-          a U-Net-based model to predict anatomical landmarks in fruit
-          fly images.
-        </p>
-
-        <p>
-          Our project extends the original implementation by evaluating
-          how robust the model is when the input images differ from the
-          conditions represented in the original training dataset.
-        </p>
-      </section>
-
-      <section class="section" id="about">
-        <div class="section-label">Overview</div>
-
-        <h2>About the Project</h2>
-
-        <p class="lead">
-          Animal pose estimation can support the quantitative study of
-          movement, posture, and behavior in neuroscience and biology.
-          However, strong performance on an original test dataset does not
-          necessarily guarantee reliable predictions under new imaging
-          conditions.
-        </p>
-
-        <p>
-          In this project, we investigate the robustness and
-          generalizability of a U-Net-based animal pose estimator trained
-          to localize anatomical landmarks in fruit fly images.
-        </p>
-
-        <p>
-          We examine how the model responds to controlled changes in image
-          appearance, geometric structure, and visibility. We also analyze
-          whether individual anatomical landmarks differ in their
-          sensitivity to these perturbations.
-        </p>
-      </section>
-
-      <section class="section" id="objectives">
-        <div class="section-label">Research questions</div>
-
-        <h2>Project Objectives</h2>
-
-        <div class="objectives">
-
-          <div class="objective">
-            <div class="objective-number">1</div>
-            <p>
-              Evaluate the baseline U-Net pose estimator on unmodified
-              fruit fly images.
-            </p>
-          </div>
-
-          <div class="objective">
-            <div class="objective-number">2</div>
-            <p>
-              Measure how model predictions change under controlled image
-              perturbations.
-            </p>
-          </div>
-
-          <div class="objective">
-            <div class="objective-number">3</div>
-            <p>
-              Compare the sensitivity of different anatomical landmarks.
-            </p>
-          </div>
-
-          <div class="objective">
-            <div class="objective-number">4</div>
-            <p>
-              Investigate the effect of geometric transformations and
-              image-region occlusion.
-            </p>
-          </div>
-
-          <div class="objective">
-            <div class="objective-number">5</div>
-            <p>
-              Assess whether model accuracy depends on regularities in
-              fruit fly position, orientation, and visibility.
-            </p>
-          </div>
-
-          <div class="objective">
-            <div class="objective-number">6</div>
-            <p>
-              Develop a framework for evaluating robustness beyond
-              standard test-set accuracy.
-            </p>
-          </div>
-
-        </div>
-      </section>
-
-      <section class="section" id="methods">
-        <div class="section-label">Experimental approach</div>
-
-        <h2>Methods</h2>
-
-        <p>
-          We used the U-Net animal pose estimation framework provided
-          through the Neuromatch Academy Animal Pose Estimation project.
-          The model produces heatmaps representing the predicted locations
-          of fruit fly anatomical landmarks.
-        </p>
-
-        <p>
-          Baseline performance was first evaluated using unmodified images.
-          We then examined model behavior under appearance modifications,
-          geometric transformations, and occlusion. Predictions were
-          analyzed across independent runs and at the level of individual
-          anatomical landmarks.
-        </p>
-
-        <div class="pipeline">
-
-          <div class="pipeline-step">
-            Fruit Fly Images
-          </div>
-
-          <div class="pipeline-step">
-            Controlled Perturbations
-          </div>
-
-          <div class="pipeline-step">
-            U-Net Pose Estimator
-          </div>
-
-          <div class="pipeline-step">
-            Landmark Heatmaps
-          </div>
-
-          <div class="pipeline-step">
-            Robustness Analysis
-          </div>
-
-        </div>
-      </section>
-
-      <section class="section" id="results">
-        <div class="section-label">Main findings</div>
-
-        <h2>Results</h2>
-
-        <p class="lead">
-          Across independent runs, the baseline U-Net localized fruit fly
-          landmarks accurately on unmodified images.
-        </p>
-
-        <p>
-          Preliminary perturbation analyses showed that model performance
-          was relatively preserved under mild appearance changes but
-          degraded more strongly under geometric transformations and
-          occlusion.
-        </p>
-
-        <p>
-          Landmark-level analyses further suggested that some anatomical
-          points were more sensitive to perturbation than others.
-        </p>
-
-        <p>
-          Occlusion experiments indicated that removing key image regions
-          could substantially alter predicted landmark locations and
-          heatmap structure. This suggests that the model depends on both
-          local visual evidence and the spatial regularities present in the
-          training dataset.
-        </p>
-
-        <div class="results-grid">
-
-          <div class="result-card">
-            <h3>Baseline Performance</h3>
-            <p>
-              The model accurately localized landmarks on unmodified
-              images across independent runs.
-            </p>
-          </div>
-
-          <div class="result-card">
-            <h3>Appearance Changes</h3>
-            <p>
-              Performance was relatively preserved under mild changes
-              to image appearance.
-            </p>
-          </div>
-
-          <div class="result-card">
-            <h3>Geometric Transformations</h3>
-            <p>
-              Transformations affecting position or orientation produced
-              stronger performance degradation.
-            </p>
-          </div>
-
-          <div class="result-card">
-            <h3>Landmark Sensitivity</h3>
-            <p>
-              Some anatomical landmarks appeared more sensitive to
-              perturbations than others.
-            </p>
-          </div>
-
-          <div class="result-card">
-            <h3>Occlusion</h3>
-            <p>
-              Removing key image regions substantially altered predicted
-              locations and heatmap structure.
-            </p>
-          </div>
-
-          <div class="result-card">
-            <h3>Spatial Regularities</h3>
-            <p>
-              Predictions may rely partly on consistent spatial patterns
-              represented in the training data.
-            </p>
-          </div>
-
+        <div class="section-label">
+          Authors
         </div>
 
-        <div class="figure-placeholder">
-          <strong>Results figures can be added here</strong>
-          Prediction examples, perturbation comparisons, error plots,
-          landmark-level analyses, or occlusion heatmaps.
-        </div>
-      </section>
+        <h2>Project Team</h2>
 
-      <section class="section highlight" id="conclusion">
-        <div class="section-label">Interpretation</div>
+        <div class="authors-grid">
 
-        <h2>Conclusion</h2>
-
-        <p class="lead">
-          Our results suggest that the Neuromatch U-Net animal pose
-          estimator learns useful landmark representations but has limited
-          robustness to input transformations that violate the structure
-          of the training data.
-        </p>
-
-        <p>
-          This indicates that high performance on the original dataset may
-          partly reflect reliance on consistent fruit fly position,
-          orientation, and visibility.
-        </p>
-
-        <p>
-          Quantitative robustness testing and occlusion-based analyses
-          provide a useful framework for evaluating the generalizability
-          of animal pose estimation models beyond standard test-set
-          accuracy.
-        </p>
-      </section>
-
-      <section class="section" id="team">
-        <div class="section-label">Collaborators</div>
-
-        <h2>Team</h2>
-
-        <div class="team-grid">
-
-          <div class="team-member">
-            Dianela
-          </div>
-
-          <div class="team-member">
-            Minjung Kim
-          </div>
-
-          <div class="team-member">
-            Xin Lin
-          </div>
-
-          <div class="team-member">
+          <div class="author">
             Pedro Luis Artunduaga Ortiz
           </div>
 
-          <div class="team-member">
+          <div class="author">
+            Minjung Kim
+          </div>
+
+          <div class="author">
+            Xin Lin
+          </div>
+
+          <div class="author">
+            Dianela Osorio
+          </div>
+
+          <div class="author">
             Richard Williamson
           </div>
 
         </div>
       </section>
 
-      <section class="section" id="acknowledgments">
-        <div class="section-label">Credits</div>
+            <section class="section" id="abstract">
 
-        <h2>Acknowledgments</h2>
+        <div class="section-label">
+          Abstract
+        </div>
+
+        <h2>Project Abstract</h2>
+
+        <div class="abstract-text">
+
+          <p>
+
+            U-Net is an encoder–decoder convolutional neural network with
+            skip connections. Its dense pixel-level predictions can be adapted
+            for landmark localization via heatmaps. We investigated whether
+            U-Net-based models trained on centered
+            <i>Drosophila melanogaster</i> images containing 17 unique
+            features learn robust body-part representations or rely on
+            consistent training-image orientation, position, and appearance.
+
+          </p>
+
+          <p>
+
+            We used the Neuromatch Academy Animal Pose Estimator with
+            4,216 annotated training images and 1,800 held-out test images.
+            Robustness was evaluated under appearance perturbations,
+            including Gaussian noise and brightness/contrast changes;
+            geometric perturbations, including rotations and translations;
+            and random, head-only, and full-body occlusions.
+
+          </p>
+
+          <p>
+
+            Multiple independently initialized models were assessed using
+            paired baseline comparisons, landmark localization error,
+            Percentage of Correct Keypoints (PCK), landmark-level analyses,
+            and summary statistics. We also explored an adaptive learning-rate
+            scheduler, code refinements, an additional insect dataset, and
+            intermediate feature-map visualization using a simplified U-Net.
+
+          </p>
+
+          <p>
+
+            Across independent runs, the baseline U-Net accurately localized
+            landmarks in unmodified images. Performance was relatively
+            preserved under mild appearance changes but declined more
+            substantially with geometric transformations and occlusion.
+            Landmark-level analyses indicated that sensitivity varied across
+            anatomical points.
+
+          </p>
+
+          <p>
+
+            Occlusion of key regions substantially altered predicted landmark
+            locations and heatmap structure, suggesting reliance on both local
+            visual evidence and spatial regularities in the training data.
+
+          </p>
+
+          <p>
+
+            The Neuromatch U-Net learns useful landmark representations but
+            has limited robustness to transformations that violate
+            training-data structure. High performance may therefore partly
+            reflect consistent fruit fly position, orientation, and
+            visibility. Quantitative perturbation and occlusion analyses
+            offer a framework for evaluating animal pose-estimation
+            generalizability beyond standard test-set accuracy.
+
+          </p>
+
+        </div>
+
+      </section>
+            <section class="section availability" id="availability">
+
+        <div class="section-label">
+          Resources
+        </div>
+
+        <h2>Data &amp; Code Availability</h2>
 
         <p>
-          This work was developed as part of the
-          <strong>Neuromatch Academy Deep Learning course,
-          July 2026, Slot 5</strong>, within the Computational
-          Neuroscience project track.
+
+          The resources associated with this project have different access
+          levels.
+
         </p>
 
         <p>
-          The project builds upon the official Neuromatch Academy
-          Animal Pose Estimation educational project and extends it
-          through robustness testing, landmark-level analysis, and
-          occlusion-based evaluation.
+
+          <strong>Public resources</strong>, including code, documentation,
+          and project materials available through this repository, are openly
+          accessible and may be used in accordance with the licenses and
+          terms of the original Neuromatch Academy educational materials.
+
         </p>
 
         <p>
-          We thank Neuromatch Academy and the creators and contributors
-          of the original educational materials, dataset pipeline, and
-          baseline U-Net implementation.
+
+          <strong>Additional materials</strong>, including intermediate
+          analyses, experimental outputs, and supporting resources that are
+          not publicly available, may be shared upon reasonable request,
+          subject to data availability and project policies.
+
         </p>
+
+        <p>
+
+          If you use this work in research, teaching, or other academic
+          activities, please provide appropriate attribution, cite the
+          relevant original sources, and acknowledge both this project and
+          the original Neuromatch Academy educational materials where
+          applicable.
+
+        </p>
+
       </section>
 
-      <section class="section" id="resources">
-        <div class="section-label">Project resources</div>
 
-        <h2>Links</h2>
+
+      <section class="section" id="links">
+
+        <div class="section-label">
+          Resources
+        </div>
+
+        <h2>Project Links</h2>
 
         <div class="links-grid">
 
@@ -934,43 +644,72 @@
             class="resource-link"
             href="https://github.com/DianelaOB/NMA-DL-Animal-Pose-Estimation"
             target="_blank"
-            rel="noopener noreferrer"
-          >
+            rel="noopener noreferrer">
+
             <strong>GitHub Repository</strong>
+
             <span>
-              View the project code, notebooks, and documentation.
+
+              Source code, notebooks, documentation, and project updates.
+
             </span>
+
           </a>
+
+
 
           <a
             class="resource-link"
             href="https://deeplearning.neuromatch.io/projects/Neuroscience/pose_estimation.html"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>Original Neuromatch Project</strong>
+            rel="noopener noreferrer">
+
+            <strong>Original Neuromatch Academy Project</strong>
+
             <span>
-              Visit the Neuromatch Academy Animal Pose Estimation page.
+
+              Official Animal Pose Estimation project from the Neuromatch
+              Academy Deep Learning course.
+
             </span>
+
           </a>
 
         </div>
+
       </section>
 
     </div>
+
   </main>
 
   <footer>
+
     <p>
+
       <strong>
-        Neuromatch Academy · Deep Learning · July 2026 · Slot 5
+
+        Neuromatch Academy • Deep Learning • July 2026 • Slot 5
+
       </strong>
+
     </p>
 
     <p class="footer-small">
-      Computational Neuroscience — Animal Pose Estimation Robustness
+
+      Computational Neuroscience Project
+
     </p>
+
+    <p class="footer-small">
+
+      Evaluating the Robustness of a U-Net-Based Animal Pose Estimator Using
+      a Fruit Fly Dataset
+
+    </p>
+
   </footer>
 
 </body>
+
 </html>
