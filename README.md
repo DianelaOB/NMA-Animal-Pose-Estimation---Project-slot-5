@@ -40,16 +40,10 @@ https://deeplearning.neuromatch.io/projects/Neuroscience/pose_estimation.html
 
 We gratefully acknowledge **Neuromatch Academy** for providing the educational framework, the Animal Pose Estimator baseline model, the dataset, and the open-source code that served as the foundation for this project.
 
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="Neuromatch_logo.png" alt="Neuromatch Logo" width="250">
-    </td>
-    <td align="center">
-      <img src="pod_logo.jpeg" alt="POD Logo" width="120">
-    </td>
-    <td align="center">
-      <img src="Neuromatch_deeplearning_logo.png" alt="Neuromatch Deep Learning Logo" width="250">
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="Neuromatch_logo.png" alt="Neuromatch Logo" width="250">
+  &nbsp;&nbsp;&nbsp;
+  <img src="pod_logo.jpeg" alt="POD Logo" width="120">
+  &nbsp;&nbsp;&nbsp;
+  <img src="Neuromatch_deeplearning_logo.png" alt="Neuromatch Deep Learning Logo" width="250">
+</p>
