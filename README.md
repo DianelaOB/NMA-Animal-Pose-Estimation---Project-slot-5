@@ -45,4 +45,4 @@ The original Neuromatch Academy project is available at:
 
 https://deeplearning.neuromatch.io/projects/Neuroscience/pose_estimation.html
 
-We gratefully acknowledge **Neuromatch Academy** for providing the educational framework, the Animal Pose Estimator baseline model, the annotated *Drosophila melanogaster* dataset, and the open-source code that served as the foundation for this project.
+We gratefully acknowledge **Neuromatch Academy** for providing the educational framework, the Animal Pose Estimator baseline model, the dataset, and the open-source code that served as the foundation for this project.
